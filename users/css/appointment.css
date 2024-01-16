@@ -1,0 +1,88 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fbf8ef;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+footer {
+  background: #343430;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a80b29;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+nav li {
+  float: left;
+  border-right: 1px solid #f8f6eb;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: none; 
+  color: white; 
+}
+
+.LocationPage {
+  max-width: 400px;
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #f8f0f09d;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0);
+}
+
+.input-box {
+  margin: 10px 0;
+}
+
+.input-box input, .input-box select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.Login.btn {
+  background-color: #343430;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Login.btn:hover {
+  background-color: #343430;
+}

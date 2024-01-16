@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap');
+
+:root {
+  --background: #fffffb;
+  --accent:  rgb(168, 11, 41);
+  --otherAccent: rgb(168, 11, 41);
+  --darkBackground: #999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", arial, sans-serif;
+  color: #222;
+}
+
+#login-container {
+  height: 400px;
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  background: var(--background);
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#login-container .profile-img {
+  height: 100px;
+  width: 100px;
+  background: url('/');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#login-container h1 {
+  font-family: 'Sriracha', arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--otherAccent);
+}
+
+#login-container .description {
+  margin-bottom: 20px;
+}
+
+#login-container .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 110px);
+  margin: 0 auto;
+}
+
+#login-container .social a {
+  text-align: center;
+  border: solid 2px var(--accent);
+  width: auto;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+#login-container .social a:hover {
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  width: auto;
+}
+
+#login-container button {
+  width: 80%;
+  height: 80px;
+  font-size: 2rem;
+  margin: 30px 10% 0 10%;
+  color: var(--background);
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background: linear-gradient(45deg, var(--accent), var(--otherAccent), var(--otherAccent), var(--accent));
+  background-size: 300% 300%;
+  outline: none;
+  transition: all 200ms ease-in-out;
+}
+
+#login-container button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
+  -webkit-animation: gradientBG 1.5s ease-in-out forwards;
+  animation: gradientBG 1.5s ease-in-out forwards;
+  cursor: pointer;
+}
+
+#login-container button:active {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(4px);
+}
+
+#login-container footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--darkBackground);
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  padding: 0 20px;
+  margin-left: -20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#login-container footer div {
+  display: flex;
+}
+
+#login-container footer div .fa-heart {
+  color: var(--accent);
+}
+
+#login-container footer div p:first-child {
+  margin-right: 10px;
+  border-right: 4px solid white;
+  padding-right: 10px;
+}
+
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradientBG{
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+ul.nav-items {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0; 
+    overflow: hidden; 
+    background-color: rgb(168, 11, 41);
+   height: 7vh; 
+   position: fixed; 
+   top: 0; 
+   width: 100%;}
+ li {
+   float: left;
+   border-right:1px solid rgb(248, 246, 235) 
+ }
+ li a {
+   display: block; 
+   color: white; 
+   text-align: center;
+   padding: 10px 16px;
+   text-decoration: none; 
+ }
+ li a:hover:not(.active) { 
+   background-color:rgb(52, 52, 48); 
+ }
+ .active { 
+   background-color: rgb(52, 52, 48); 
+ }

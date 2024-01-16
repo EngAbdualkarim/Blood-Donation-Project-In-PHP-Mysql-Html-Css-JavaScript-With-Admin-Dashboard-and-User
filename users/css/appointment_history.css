@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbf8ef; 
+}  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(168, 11, 41);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  nav li {
+    float: left;
+    border-right: 1px solid #fbf8ef;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    text-decoration: none; 
+    color: white; 
+  }
+  
+
+.ch{  position: absolute;  top: 20rem;  left: 30rem;  align-items: center;}
+
+
